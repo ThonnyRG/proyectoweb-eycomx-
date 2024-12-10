@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "gOah8RCtt9fE1RPOt"
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal (Logo EYCOmx)</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="cotizaciones.html">Cotizar</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="otras.html">Otras (En un momento lo veo)</a></li>
+        </ul>
+    </nav>
+
+    <h1> ¡Hagamos que tu proyecto despegue! </h1>
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio" required>
+            <option value="Animación">Animación</option>
+            <option value="Diseño">Diseño</option>
+            <option value="Fotografía">Fotografía</option>
+            <option value="Marketing Digital">Marketing Digital</option>
+            <option value="VÍdeo">Vídeo</option>
+        </select>
+
+        <label for="mensaje">Descripción del Servicio:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="ScriptCorreos.js"></script>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.instagram.com/eycomx" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/EYCOmx" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@eycomx" target="_blank">TikTok</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
