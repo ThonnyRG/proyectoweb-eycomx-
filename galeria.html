@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom y Filtro de Imágenes</title>
+    <link rel="stylesheet" href="prueba.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal (Logo EYCOmx)</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="cotizaciones.html">Cotizar</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <div class="buttons">
+        <button onclick="filterSelection('all')">Todos</button>
+        <button onclick="filterSelection('landing')">Animación</button>
+        <button onclick="filterSelection('ecommerce')">Diseño</button>
+        <button onclick="filterSelection('ecommerce')">Fotografía</button>
+        <button onclick="filterSelection('landing')">Marketing Digital</button>
+        <button onclick="filterSelection('webdesign')">Vídeo</button>
+    </div>
+
+    <div class="gallery">
+        <div class="item ecommerce">
+            <img src="ecommerce1.jpg" alt="Ecommerce 1" onclick="zoomImage(this)">
+        </div>
+        <div class="item landing">
+            <img src="landing1.jpg" alt="Landing Page 1" onclick="zoomImage(this)">
+        </div>
+        <div class="item webdesign">
+            <img src="webdesign1.jpg" alt="Web Design 1" onclick="zoomImage(this)">
+        </div>
+        <!-- Añade más elementos según sea necesario -->
+    </div>
+
+    <div id="zoomModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+    </div>
+
+
+
+    <nav>
+        <p>Desde 2017, en EYCOmx nos dedicamos a elevar marcas al mundo digital con creatividad y estrategia. Somos un
+            equipo apasionado por el diseño, el marketing y la publicidad.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/eycomx" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/EYCOmx" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@eycomx" target="_blank">TikTok</a></li>
+        </ul>
+        <p>Copyright © 2024 Hecho por EYCOmx</p>
+    </nav>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
